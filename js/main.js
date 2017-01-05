@@ -20,6 +20,7 @@ $(document).ready(function() {
         $('body').fadeIn();
         $('#contact').fadeIn();
         $('footer').fadeIn();
+        $("body, html").animate({scrollTop: 0}, 300);
         $('#videoBtn').css('opacity', '0.5');
         $('#contactBtn').css('opacity', '1');
     })
