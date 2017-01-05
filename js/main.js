@@ -3,6 +3,7 @@ $(document).ready(function() {
     // **** Video action ****
     $('#videoBtn').click(function(){
         $('#videoContainer').fadeIn();
+        $('#homeSocial').hide();
         $('#contact').hide();
         $('footer').hide();
         $("body, html").animate({
@@ -15,6 +16,7 @@ $(document).ready(function() {
     // **** Contact action ****
     $('#contactBtn').click(function(){
         $('#videoContainer').hide();
+        $('#homeSocial').hide();
         $('#contact').fadeIn();
         $('footer').fadeIn();
         $('#videoBtn').css('opacity', '0.5');
