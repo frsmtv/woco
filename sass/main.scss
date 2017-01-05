@@ -42,7 +42,6 @@ html, body {
       font-weight: 300;
       ul {
         padding: 0;
-        margin-left: 5%;
         text-align: center;
         color: #efebe9;
         li {
@@ -67,19 +66,22 @@ html, body {
     #homeSocial {
       margin-top: 5%;
       text-align: center;
-      li {
-        display: inline-block;
-        margin: 0 1%;
-        font-size: 2rem;
-        opacity: .5;
+      ul {
+        padding: 0;
+        li {
+          display: inline-block;
+          margin: 0 1%;
+          font-size: 2rem;
+          opacity: .5;
 
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 500ms ease-in-out;
-        -ms-transition: all 500ms ease-in-out;
-        -o-transition: all 500ms ease-in-out;
-        transition: all 500ms ease-in-out;
-        &:hover {
-          opacity: 1;
+          -webkit-transition: all 500ms ease-in-out;
+          -moz-transition: all 500ms ease-in-out;
+          -ms-transition: all 500ms ease-in-out;
+          -o-transition: all 500ms ease-in-out;
+          transition: all 500ms ease-in-out;
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }
@@ -110,6 +112,7 @@ html, body {
         }
       }
       #social {
+        padding: 0;
         li {
           display: inline-block;
           margin: 0 1%;
@@ -119,7 +122,6 @@ html, body {
   }
   footer {
     display: none;
-    margin-left: 5%;
     text-align: center;
     font-size: 0.8rem;
     opacity: .5;
