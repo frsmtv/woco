@@ -27,33 +27,101 @@ html, body {
 
   header {
     margin-top: 10%;
+
+    //Large screen
+    @media only screen and (min-width : 1824px) {
+      margin-top: 2%;
+    }
+
+    //iPad portrait
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+      margin-top: 5%;
+    }
+    //iPad landscape
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+      margin-top: 5%;
+    }
+
+    //iPhone 5 landscape
+    @media only screen and (device-width: 568px){
+      margin-top: 2%;
+    }
+
+
     #logo {
       display: block;
       width: 500px;
       margin-left: auto;
       margin-right: auto;
+
+      //Smartphones portrait
+      @media only screen and (max-width : 415px) {
+        width: 100%;
+      }
+
     }
     p {
       margin-top: 5%;
       text-align: center;
+
+      //Smartphones portrait
+      @media only screen and (max-width : 415px) {
+        text-align: center;
+      }
     }
   }
   main {
     #videoContainer {
       width: 100%;
       margin-top: 10%;
+
+      //Large screens
+      @media only screen and (min-width : 1824px) {
+        margin-top: 5%;
+      }
+
+
       iframe {
         width: 100%;
+
+        //Smartphones portrait
+        @media only screen and (max-width : 415px) {
+          width: 100%;
+        }
       }
     }
     #contact {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       line-height: 2;
+      letter-spacing: 3px;
       text-align: center;
+
+      //iPad portrait
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+        font-size: 1rem;
+      }
+      //iPad landscape
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+        font-size: 1rem;
+      }
+
+      //Smartphones portrait
+      @media only screen and (max-width : 415px) {
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      //iPhone 4 & 5 portrait
+      @media only screen and (max-width : 320px) {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
       h2 {
         text-transform: uppercase;
       }
       ul {
+        padding: 0;
         li {
           -webkit-transition: all 500ms ease-in-out;
           -moz-transition: all 500ms ease-in-out;
@@ -71,6 +139,20 @@ html, body {
         li {
           display: inline-block;
           margin: 0 1%;
+          i {
+            //iPad portrait
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+              font-size: 1.8rem;
+            }
+            //iPad landscape
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+              font-size: 1.8rem;
+            }
+            //iPhone 5 portrait
+            @media screen and (device-width: 320px)  and (-webkit-device-pixel-ratio: 2){
+              font-size: 1.4rem;
+            }
+          }
         }
       }
     }
